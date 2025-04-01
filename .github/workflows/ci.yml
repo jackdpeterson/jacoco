@@ -20,6 +20,9 @@ jobs:
           - jdk: 21
           - jdk: 21
             ecj: true
+          - jdk: 24
+          - jdk: 24
+            ecj: true
     name: JDK ${{ matrix.jdk }}${{ matrix.ecj && ' with ECJ' || ''}}
     runs-on: ubuntu-20.04
     steps:
